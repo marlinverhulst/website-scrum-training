@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
+  public mainPic = './assets/images/home1.jpg';
+
+  public pic1 = './assets/images/cartoon-olifant-1.jpg';
+  public pic2 = './assets/images/cartoon-olifant-2.jpg';
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  setMainPicture(jpg: string) {
+    this.mainPic = jpg;
+  }
 }
